@@ -91,19 +91,46 @@ body {
 .clock .hour .hr {
     width: 160px;
     height: 160px;
-    background: red;
 }
 
 .clock .hour,
 .clock .hour .min {
     width: 190px;
     height: 190px;
-    background: #070e73
 }
 
 .clock .hour,
 .clock .hour .sec {
     width: 250px;
     height: 250px;
-    background: #0c8612
+}
+
+.clock .hour .hr,
+.clock .minute .min,
+.clock .second .sec {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.clock .hour .hr::before {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    left: 75.8%;
+    height: 8rem;
+    background: #ff3d68;
+    z-index: 10;
+    border-radius: 0.5rem;
+}
+
+.clock .minute .min::before {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 9rem;
+    background: #39a2db;
+    z-index: 11;
+    border-radius: 0.5rem;
 }
