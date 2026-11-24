@@ -129,8 +129,18 @@ body {
     content: '';
     position: absolute;
     width: 0.5rem;
-    height: 9rem;
+    height: 8.5rem;
     background: #39a2db;
     z-index: 11;
     border-radius: 0.5rem;
+}
+
+.clock .second .sec::before {
+    content: '';
+    position: absolute;
+    width: 0.2rem;
+    height: 9rem;
+    background: #ffffff;
+    z-index: 12;
+    border-radius: 0.1rem;
 }
